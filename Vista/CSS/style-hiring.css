@@ -1,0 +1,89 @@
+div.anuncio p{
+    font-size: .4em;
+    font-weight: 100;
+}
+/*reacomod la imagen del header*/
+.personas-img{
+    left:30em;
+}
+/*Acomoda los contenedores en fila y los muestra
+al mismo nivel, empezando de arriba*/
+main{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+h3{
+    margin:0;
+}
+.container-info{
+    width: 40em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 2em 0em;
+}
+.container-info>article{
+    width: 100%;
+    line-height: 1.6em;
+    font-size: .8em;
+}
+.posiciones{
+    width: 90%;
+    background-color: rgb(223, 223, 223);
+    padding: 1em 3em;
+    margin-top: 1em;
+    border-radius: 10px;
+    font-size: .8em;
+}
+    .posiciones h3{
+        color: royalblue;
+    }
+    .posiciones>h2{
+        border-bottom: 1px solid rgb(189, 189, 189);
+        margin: 0;
+        padding: 1em 0em;
+    }
+    /*Escribe la linea de separación*/
+    .posiciones>section{
+        border-bottom: 1px solid rgb(189, 189, 189);
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+    /*Menos en la última section*/
+    .posiciones section:last-of-type{
+        border-bottom: none;
+    }
+
+.postularme{
+    background-color: rgb(58, 127, 255);
+    color: white;
+    width: 20em;
+    font-size: .7em;
+    padding: 2em;
+    border-radius: 10px;
+    margin: 3em;
+}
+
+@media (max-width: 1280px) {
+    /*Reduce tamaño, aún se ven los 2 al mismo nivel*/
+    .container-info{
+        width: 30em;
+    }
+}
+@media(max-width: 1100px){  
+    /*mueve el aside abajo del contenedor*/            
+    main{
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    /*Vuelve a dar tamaño al aside para mejor diseño*/
+    .postularme{
+        width: 40em;
+        margin: 0;
+    }
+
+}
