@@ -1,0 +1,93 @@
+html{
+    background-color: rgb(58, 127, 255);
+}
+#Que-hacemos, #Valores, #Random{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3em 0em;
+}
+.container-que, .container-valores, .container-random{
+    width: 60em;
+}
+#Que-hacemos h2{
+    color: rgb(28, 63, 127);
+}
+
+
+body{
+    background-image: url("../Media/pot.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+    #Que-hacemos{
+        background-color: white;
+    }
+        #Que-hacemos p{
+            font-size: 1.2em;
+            line-height: 1.3em;
+            color: rgb(43, 43, 43);
+        }
+        #Que-hacemos table{
+            background-color: tomato;
+        }
+        table tr{
+            height: 10em;
+        }
+        tr td{
+            width: 10em;
+        }
+        tr:nth-of-type(2n) td:nth-of-type(2n), tr:first-of-type td:nth-of-type(3n),
+        tr:first-of-type td:first-of-type, tr:first-of-type td:last-of-type,
+        tr:last-of-type td:last-of-type, tr:last-of-type td:first-of-type,
+        tr:last-of-type td:nth-of-type(3n){
+            background-color: turquoise;
+        }
+    #Valores{
+        background-color: rgb(25, 57, 116);
+        color: white;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+        #Valores h2{
+            color: white;
+            margin:0;
+        }
+        .valores{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+        }
+        .valores div{
+            width: 20%;
+            margin: 3%;
+            margin-left: 0;
+            margin-bottom: 0;
+            font-size: .8em;
+            line-height: 1.5em;
+        }
+    #Random{
+        background-color: transparent;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+        .container-random p{
+            width: 35em;
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+        .container-random ul{
+            list-style-type:circle;
+            font-size: 2em;
+        }
+        .container-random .boton-azul{
+            font-size: 1em;
+        }
+    
+        

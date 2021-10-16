@@ -1,0 +1,121 @@
+a{
+    transition: border .4s;
+}
+.publica-proyecto, .boton-azul, .banner a, .super-container>a {    
+    transition: background-color .4s;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+nav a:hover{
+    border-bottom: 5px solid rgb(0, 38, 191);
+    text-decoration: none;
+    color: rgb(0, 38, 191);    
+}
+.logo:hover{
+    text-decoration: none;
+    border:none;
+    background-color: transparent;
+}
+.publica-proyecto{
+    border:none;
+}
+.publica-proyecto:hover{
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: rgb(0, 135, 56);
+}
+.Proyectos a:hover{
+    text-decoration: none;
+}
+
+.banner a:hover{
+    background-color: rgb(38, 27, 89);
+    text-decoration: none;
+}
+
+.super-container>a:hover, .boton-azul:hover{
+    background-color: rgb(0, 24, 94);
+    text-decoration: none;
+}
+
+
+@media (max-width: 1280px) {
+    .logo{
+        background-image: url("../Media/logo3.png");
+        width: 5em;
+    }
+    .interaccion{
+        width: 40em;
+        justify-content:  flex-end;
+    }
+    #header-footer,#Posibilidades,#Informacion,#Empresas, .container-proyectos, #Habilidades, .super-container{
+        width: 50em;
+    }
+    .container-header{
+        width: 40em;
+
+    }
+    .personas-img{
+        height: 20em;
+        top: 8.5em;
+        left: 18em;
+    }
+    .container-summary{
+        margin-right: 1em;
+    }
+
+}
+
+@media(max-width: 1090px){    
+    .partes, .interaccion a:nth-of-type(2n){
+        display: none;
+    }
+    
+    #header-footer,#Posibilidades,#Informacion,#Empresas, .container-proyectos, #Habilidades, .super-container{
+        width: 40em;
+    }
+    .container-banner{
+        font-size: .8em;
+    }
+    section h2{
+        font-size: 1.3em;
+    }
+    blockquote{
+        width: 30em;
+    }
+    .container-anchor-descubre{
+        width: 30em;
+    }
+    .listas ul:nth-of-type(2n){
+        display: none;
+    }
+    article{
+        width: 40%;    
+    }
+    .container-proyectos{
+        justify-content: flex-start;
+    }
+    .container-stats{
+        display: flex;
+        flex-flow: column;
+    }
+    .statistics{
+        width: 100%;
+    }
+    div.enlaces{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    div.enlaces a{
+        width: 40%;
+        text-align: center;
+    }
+    .container-summary:nth-of-type(2n){
+        display: none;
+    }
+}
